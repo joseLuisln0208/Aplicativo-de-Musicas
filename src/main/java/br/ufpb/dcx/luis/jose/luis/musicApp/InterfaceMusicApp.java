@@ -8,5 +8,9 @@ public interface InterfaceMusicApp
 
     Album searchAlbumFromBandWithName(String strAlbumName, Band bandToSearch);
     void addNewAlbumToBand(Album albumToAdd, Band bandToAddAlbum);
-    void removeAlbumFromBand(String strAlbumName, Band bandToRemoveAlbum);
+    void removeAlbumFromBand(Album albumToBeRemoved, Band bandToRemoveAlbum);
+
+    Music searchMusicFromAlbumWithName(String strMusicName, Album albumToSearch);
+    void addNewMusicToALbum(Music musicToAdd, Album albumToAddMusic);
+    void removeMusicFromAlbum(Music musicToBeRemoved, Album albumToRemoveMusic);
 }
